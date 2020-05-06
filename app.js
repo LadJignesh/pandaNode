@@ -16,6 +16,12 @@ app.use(bodyParser.urlencoded({
     extended: true
   }));
 
+
+app.get('/',(req,res)=>{
+    res.status(200).send('This is it');
+})
+
+
 //set up routes
 app.use('/challenge', challengeData);
 
